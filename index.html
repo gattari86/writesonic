@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Writesonic Review | Best AI Writer 2025</title>
     <meta name="description" content="Generate high-quality, SEO-friendly content for blogs, Facebook ads, and Google ads in seconds. Start your free trial.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Outfit', sans-serif; }
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Outfit', sans-serif;
+            overflow-x: hidden;
+        }
         .gradient-text {
             background: linear-gradient(90deg, #a855f7, #ec4899);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         .hero-glow {
             background: radial-gradient(circle, rgba(168,85,247,0.15) 0%, rgba(255,255,255,0) 70%);
@@ -21,6 +31,9 @@
         .image-container {
             aspect-ratio: 16 / 9;
             object-fit: cover;
+            width: 100%;
+            height: auto;
+            display: block;
         }
         @media (max-width: 768px) {
             .image-container {
@@ -53,44 +66,50 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative pt-28 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+    <section class="relative pt-24 md:pt-36 pb-20 md:pb-32 overflow-hidden">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full hero-glow z-0 pointer-events-none"></div>
 
-        <div class="max-w-5xl mx-auto px-4 md:px-6 relative z-10">
-            <div class="text-center mb-8 md:mb-12">
-                <div class="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-purple-400 text-xs font-semibold mb-6 md:mb-8 animate-fade-in-up">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Trust Badge -->
+            <div class="text-center mb-10 md:mb-12">
+                <div class="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-purple-400 text-xs font-semibold animate-fade-in-up">
                     <span class="relative flex h-2 w-2">
                       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
                       <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
                     </span>
                     Trusted by 10,000,000+ Creators
                 </div>
-
-                <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6 tracking-tight">
-                    Create SEO Content <br class="hidden md:block">
-                    <span class="gradient-text">10x Faster with AI</span>
-                </h1>
-
-                <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed px-2">
-                    Stop staring at a blank cursor. Generate factual, trending, and on-brand blogs, ads, and emails in seconds. Powered by GPT-4 and real-time Google data.
-                </p>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 px-2">
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-xl text-base md:text-lg font-bold shadow-lg shadow-purple-900/20 transition-all transform hover:scale-105 flex items-center justify-center gap-2">
-                        Start Free Trial <i data-lucide="arrow-right" class="h-4 md:h-5 w-4 md:w-5"></i>
-                    </a>
-                    <a href="#comparison" class="w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-slate-900 border border-slate-800 hover:bg-slate-800 rounded-xl text-base md:text-lg font-medium transition-colors">
-                        See Why It's Better
-                    </a>
-                </div>
-                <p class="mt-3 md:mt-4 text-xs text-slate-500 uppercase tracking-wider font-semibold">No Credit Card Required • 10,000 Free Words</p>
             </div>
+
+            <!-- Headline -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-center mb-6 md:mb-8 tracking-tight">
+                Create SEO Content <br class="hidden sm:block">
+                <span class="gradient-text">10x Faster with AI</span>
+            </h1>
+
+            <!-- Subheading -->
+            <p class="text-base sm:text-lg md:text-lg lg:text-xl text-slate-400 text-center mb-10 md:mb-12 max-w-2xl mx-auto leading-relaxed">
+                Stop staring at a blank cursor. Generate factual, trending, and on-brand blogs, ads, and emails in seconds. Powered by GPT-4 and real-time Google data.
+            </p>
+
+            <!-- CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6">
+                <a href="YOUR_AFFILIATE_LINK_HERE" class="w-full sm:w-auto px-6 md:px-8 py-3.5 md:py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-lg text-base md:text-lg font-bold shadow-lg shadow-purple-900/30 transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2">
+                    Start Free Trial <i data-lucide="arrow-right" class="h-4 md:h-5 w-4 md:w-5"></i>
+                </a>
+                <a href="#comparison" class="w-full sm:w-auto px-6 md:px-8 py-3.5 md:py-4 bg-slate-900 border border-slate-800 hover:bg-slate-800 hover:border-slate-700 rounded-lg text-base md:text-lg font-medium transition-colors duration-200">
+                    See Why It's Better
+                </a>
+            </div>
+
+            <!-- Subtext -->
+            <p class="text-center text-xs md:text-sm text-slate-500 uppercase tracking-wider font-semibold">No Credit Card Required • 10,000 Free Words</p>
         </div>
 
         <!-- Dashboard Preview with Image -->
-        <div class="mt-12 md:mt-16 max-w-6xl mx-auto px-4 relative">
+        <div class="mt-16 md:mt-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-20 pointer-events-none"></div>
-            <div class="bg-slate-900 border border-slate-800 rounded-lg md:rounded-xl p-2 shadow-2xl transform hover:rotate-0 transition duration-700 md:hover:scale-105">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-0.5 shadow-2xl transition-all duration-700 hover:border-slate-700">
                 <div class="bg-slate-950 rounded-lg overflow-hidden border border-slate-800/50">
                     <img src="./public/images/dashboard-dark-design.jpg" alt="Writesonic Dashboard" class="w-full h-auto object-cover image-container" loading="lazy">
                 </div>
@@ -99,89 +118,90 @@
     </section>
 
     <!-- Benefits Section with Images -->
-    <section class="py-16 md:py-20 bg-slate-900/50">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-2xl md:text-4xl font-bold mb-3 md:mb-4">Powered by Real-Time AI</h2>
+    <section class="py-20 md:py-28 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 md:mb-5">Powered by Real-Time AI</h2>
                 <p class="text-slate-400 text-base md:text-lg">Write better content in less time</p>
             </div>
 
-            <!-- Image 1: Blog Writing -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 items-center">
+            <!-- Benefit 1: Blog Writing -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-24 items-center">
                 <div class="order-2 md:order-1">
-                    <img src="./public/images/blog-writing-laptop.jpg" alt="Blog Writing with AI" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                    <img src="./public/images/blog-writing-laptop.jpg" alt="Blog Writing with AI" class="rounded-xl w-full h-auto object-cover shadow-lg" loading="lazy">
                 </div>
-                <div class="order-1 md:order-2">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Blog Posts That Rank</h3>
-                    <p class="text-slate-300 text-base md:text-lg mb-4 leading-relaxed">
+                <div class="order-1 md:order-2 space-y-5">
+                    <h3 class="text-3xl md:text-4xl font-bold">Blog Posts That Rank</h3>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed">
                         Write SEO-optimized blog posts in minutes, not days. Writesonic integrates with SEO tools to ensure your content ranks on Google's first page.
                     </p>
-                    <ul class="space-y-2 md:space-y-3 text-slate-400">
-                        <li class="flex items-start gap-3">
+                    <ul class="space-y-3 pt-2">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Real-time Google data integration</span>
+                            <span class="text-base">Real-time Google data integration</span>
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Fact-checked content</span>
+                            <span class="text-base">Fact-checked content</span>
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>1,500+ word articles in seconds</span>
+                            <span class="text-base">1,500+ word articles in seconds</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Image 2: Workspace -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16 items-center">
-                <div>
-                    <h3 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Scale Your Content Team</h3>
-                    <p class="text-slate-300 text-base md:text-lg mb-4 leading-relaxed">
+            <!-- Benefit 2: Workspace -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-24 items-center">
+                <div class="space-y-5">
+                    <h3 class="text-3xl md:text-4xl font-bold">Scale Your Content Team</h3>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed">
                         Whether you're a freelancer, agency, or brand, Writesonic replaces your entire content writing workflow.
                     </p>
-                    <ul class="space-y-2 md:space-y-3 text-slate-400">
-                        <li class="flex items-start gap-3">
+                    <ul class="space-y-3 pt-2">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Learn your brand voice</span>
+                            <span class="text-base">Learn your brand voice</span>
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Create in 50+ languages</span>
+                            <span class="text-base">Create in 50+ languages</span>
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Generate multiple variations</span>
+                            <span class="text-base">Generate multiple variations</span>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <img src="./public/images/content-writing-workspace.jpg" alt="Content Writing Workspace" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                    <img src="./public/images/content-writing-workspace.jpg" alt="Content Writing Workspace" class="rounded-xl w-full h-auto object-cover shadow-lg" loading="lazy">
                 </div>
             </div>
 
-            <!-- Image 3: Analytics -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-center">
+            <!-- Benefit 3: Analytics -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div class="order-2 md:order-1">
-                    <img src="./public/images/seo-analytics-visual.jpg" alt="SEO Analytics" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                    <img src="./public/images/seo-analytics-visual.jpg" alt="SEO Analytics" class="rounded-xl w-full h-auto object-cover shadow-lg" loading="lazy">
                 </div>
-                <div class="order-1 md:order-2">
-                    <h3 class="text-2xl md:text-3xl font-bold mb-3 md:mb-4">Track Performance in Real-Time</h3>
-                    <p class="text-slate-300 text-base md:text-lg mb-4 leading-relaxed">
+                <div class="order-1 md:order-2 space-y-5">
+                    <h3 class="text-3xl md:text-4xl font-bold">Track Performance in Real-Time</h3>
+                    <p class="text-slate-300 text-base md:text-lg leading-relaxed">
                         See exactly how your content performs with built-in analytics and SEO tracking.
                     </p>
-                    <ul class="space-y-2 md:space-y-3 text-slate-400">
-                        <li class="flex items-start gap-3">
+                    <ul class="space-y-3 pt-2">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Keyword performance tracking</span>
+                            <span class="text-base">Keyword performance tracking</span>
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>Traffic insights</span>
+                            <span class="text-base">Traffic insights</span>
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3 text-slate-400">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span>ROI metrics</span>
+                            <span class="text-base">ROI metrics</span>
                         </li>
                     </ul>
                 </div>
@@ -190,65 +210,66 @@
     </section>
 
     <!-- Features Grid -->
-    <section id="features" class="py-16 md:py-20 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-2xl md:text-4xl font-bold mb-3 md:mb-4">Why Writers Love Writesonic</h2>
+    <section id="features" class="py-20 md:py-28 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 md:mb-5">Why Writers Love Writesonic</h2>
                 <p class="text-slate-400 text-base md:text-lg">Features built for modern content creators</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                 <!-- Feature 1 -->
-                <div class="p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/50 transition group">
-                    <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
+                <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/30 hover:bg-slate-900/70 transition-all duration-300 group h-full flex flex-col">
+                    <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-5 group-hover:bg-blue-900/50 group-hover:scale-110 transition-all duration-300">
                         <i data-lucide="globe" class="text-blue-400 h-6 w-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Factual & Real-Time</h3>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 flex-shrink-0">Factual & Real-Time</h3>
                     <p class="text-slate-400 leading-relaxed text-sm md:text-base">Unlike other AI tools cut off in 2023, Writesonic browses the live internet to write about today's news and trends.</p>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-pink-500/50 transition group">
-                    <div class="w-12 h-12 bg-pink-900/30 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
+                <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-pink-500/30 hover:bg-slate-900/70 transition-all duration-300 group h-full flex flex-col">
+                    <div class="w-12 h-12 bg-pink-900/30 rounded-lg flex items-center justify-center mb-5 group-hover:bg-pink-900/50 group-hover:scale-110 transition-all duration-300">
                         <i data-lucide="check-circle" class="text-pink-400 h-6 w-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Brand Voice</h3>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 flex-shrink-0">Brand Voice</h3>
                     <p class="text-slate-400 leading-relaxed text-sm md:text-base">Upload your own blog posts or website URL. The AI learns your specific tone and style instantly.</p>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/50 transition group">
-                    <div class="w-12 h-12 bg-purple-900/30 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
+                <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-purple-500/30 hover:bg-slate-900/70 transition-all duration-300 group h-full flex flex-col">
+                    <div class="w-12 h-12 bg-purple-900/30 rounded-lg flex items-center justify-center mb-5 group-hover:bg-purple-900/50 group-hover:scale-110 transition-all duration-300">
                         <i data-lucide="rocket" class="text-purple-400 h-6 w-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">SEO Surfer Integration</h3>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 flex-shrink-0">SEO Surfer Integration</h3>
                     <p class="text-slate-400 leading-relaxed text-sm md:text-base">Don't just write; rank. Integrated SEO scoring ensures your content hits the keyword density Google loves.</p>
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-cyan-500/50 transition group">
-                    <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
+                <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-cyan-500/30 hover:bg-slate-900/70 transition-all duration-300 group h-full flex flex-col">
+                    <div class="w-12 h-12 bg-cyan-900/30 rounded-lg flex items-center justify-center mb-5 group-hover:bg-cyan-900/50 group-hover:scale-110 transition-all duration-300">
                         <i data-lucide="mic" class="text-cyan-400 h-6 w-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Voice Commands</h3>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 flex-shrink-0">Voice Commands</h3>
                     <p class="text-slate-400 leading-relaxed text-sm md:text-base">Write by speaking. Perfect for multitasking while creating high-quality content on the go.</p>
                 </div>
 
                 <!-- Feature 5 -->
-                <div class="p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-green-500/50 transition group">
-                    <div class="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
+                <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-green-500/30 hover:bg-slate-900/70 transition-all duration-300 group h-full flex flex-col">
+                    <div class="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center mb-5 group-hover:bg-green-900/50 group-hover:scale-110 transition-all duration-300">
                         <i data-lucide="zap" class="text-green-400 h-6 w-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Lightning Fast</h3>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 flex-shrink-0">Lightning Fast</h3>
                     <p class="text-slate-400 leading-relaxed text-sm md:text-base">Generate complete articles, social posts, and ad copy in under 30 seconds.</p>
                 </div>
 
                 <!-- Feature 6 -->
-                <div class="p-6 md:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-orange-500/50 transition group">
-                    <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition">
+                <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-orange-500/30 hover:bg-slate-900/70 transition-all duration-300 group h-full flex flex-col">
+                    <div class="w-12 h-12 bg-orange-900/30 rounded-lg flex items-center justify-center mb-5 group-hover:bg-orange-900/50 group-hover:scale-110 transition-all duration-300">
                         <i data-lucide="languages" class="text-orange-400 h-6 w-6"></i>
                     </div>
-                    <h3 class="text-lg md:text-xl font-bold mb-2 md:mb-3">Multi-Language Support</h3>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 flex-shrink-0">Multi-Language Support</h3>
                     <p class="text-slate-400 leading-relaxed text-sm md:text-base">Write in 50+ languages and expand your content reach globally.</p>
                 </div>
             </div>
@@ -256,15 +277,16 @@
     </section>
 
     <!-- Comparison Table -->
-    <section id="comparison" class="py-16 md:py-20 bg-slate-900 border-y border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 md:px-6">
-            <div class="text-center mb-12 md:mb-16">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Why Pros Switch to Writesonic</h2>
+    <section id="comparison" class="py-20 md:py-28 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="text-3xl sm:text-4xl md:text-4xl font-bold mb-4 md:mb-5">Why Pros Switch to Writesonic</h2>
                 <p class="text-slate-400 text-base md:text-lg">More features, real-time data, better pricing.</p>
             </div>
 
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse text-xs md:text-sm lg:text-base">
+            <div class="overflow-x-auto rounded-xl border border-slate-800">
+                <table class="w-full text-left border-collapse text-xs md:text-sm lg:text-base bg-slate-900/50">
                     <thead>
                         <tr class="border-b border-slate-700">
                             <th class="p-3 md:p-4 text-slate-400 font-medium">Feature</th>
@@ -305,40 +327,43 @@
     </section>
 
     <!-- CTA Section with Image -->
-    <section class="py-16 md:py-24 relative overflow-hidden">
+    <section class="py-20 md:py-32 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-slate-950 z-0"></div>
-        <div class="max-w-4xl mx-auto px-4 md:px-6 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
                 <div class="order-2 md:order-1 hidden md:block">
-                    <img src="./public/images/content-marketing-person.jpg" alt="Content Marketing" class="rounded-lg w-full h-auto object-cover" loading="lazy">
+                    <img src="./public/images/content-marketing-person.jpg" alt="Content Marketing" class="rounded-xl w-full h-auto object-cover shadow-lg" loading="lazy">
                 </div>
-                <div class="order-1 md:order-2 text-center md:text-left">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Ready to scale your content?</h2>
-                    <p class="text-lg md:text-xl text-slate-400 mb-8">Join 10 million freelancers, agencies, and brands using Writesonic to create better content faster.</p>
-
-                    <a href="YOUR_AFFILIATE_LINK_HERE" class="inline-flex items-center gap-2 px-8 md:px-10 py-4 md:py-5 bg-white text-slate-900 rounded-full text-base md:text-xl font-bold hover:bg-slate-200 transition shadow-2xl shadow-white/10 w-full md:w-auto justify-center md:justify-start">
-                        Get Your Free Account
-                        <i data-lucide="chevron-right" class="h-5 md:h-6 w-5 md:w-6"></i>
-                    </a>
-                    <p class="mt-6 text-xs md:text-sm text-slate-500">No contracts. Cancel anytime.</p>
+                <div class="order-1 md:order-2 space-y-6 md:space-y-8 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-4xl font-bold">Ready to scale your content?</h2>
+                    <p class="text-lg md:text-xl text-slate-400 leading-relaxed">
+                        Join 10 million freelancers, agencies, and brands using Writesonic to create better content faster.
+                    </p>
+                    <div>
+                        <a href="YOUR_AFFILIATE_LINK_HERE" class="inline-flex items-center gap-2 px-8 md:px-10 py-4 md:py-5 bg-white text-slate-900 rounded-lg text-base md:text-lg font-bold hover:bg-slate-100 transition-colors duration-200 shadow-xl shadow-white/20 w-full md:w-auto justify-center md:justify-start">
+                            Get Your Free Account
+                            <i data-lucide="chevron-right" class="h-5 md:h-6 w-5 md:w-6"></i>
+                        </a>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-500 font-medium">No contracts. Cancel anytime.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-900 py-8 md:py-12 text-slate-500 text-xs md:text-sm">
-        <div class="max-w-7xl mx-auto px-4 md:px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 items-start md:items-center mb-6 md:mb-8">
+    <footer class="bg-slate-950 border-t border-slate-800 py-12 md:py-16 text-slate-500 text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-8 md:mb-10">
                 <div>
-                    <p>&copy; 2025 AI Partner. Independent Affiliate.</p>
+                    <p class="font-medium">&copy; 2025 AI Partner. Independent Affiliate.</p>
                 </div>
-                <div class="text-center md:text-right">
-                    <p><strong>Affiliate Disclosure:</strong> We may receive compensation from companies whose products we review. We are independently owned and opinions expressed here are our own. We are a participant in the Writesonic Affiliate Program.</p>
+                <div class="md:text-right space-y-2">
+                    <p><strong class="text-slate-400">Affiliate Disclosure:</strong> We may receive compensation from companies whose products we review. We are independently owned and opinions expressed here are our own. We are a participant in the Writesonic Affiliate Program.</p>
                 </div>
             </div>
-            <div class="border-t border-slate-800 pt-6 text-center text-xs">
-                <p>Built with ❤️ for content creators | Optimized for mobile & desktop</p>
+            <div class="border-t border-slate-800 pt-8 text-center">
+                <p class="text-xs text-slate-600">Built with care for content creators | Optimized for all devices</p>
             </div>
         </div>
     </footer>
