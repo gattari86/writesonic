@@ -44,6 +44,24 @@
                 height: auto;
             }
         }
+        .section-padding {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding-top: 7rem;
+                padding-bottom: 7rem;
+            }
+        }
+        .section-heading {
+            margin-bottom: 2rem;
+        }
+        @media (min-width: 768px) {
+            .section-heading {
+                margin-bottom: 4rem;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-white antialiased selection:bg-purple-500 selection:text-white">
@@ -123,42 +141,42 @@
     </section>
 
     <!-- Social Proof Strip -->
-    <section class="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-slate-900/50 border-y border-slate-800">
+    <section class="py-8 md:py-12 px-4 sm:px-6 lg:px-8 bg-slate-900/50 border-y border-slate-800">
         <div class="max-w-7xl mx-auto">
             <p class="text-center text-slate-400 text-xs sm:text-sm font-semibold mb-8 uppercase tracking-wider">
                 Trusted by 50,000+ Marketing Teams and Industry Leaders
             </p>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 sm:gap-8 opacity-60 items-center">
-                <div class="flex items-center justify-center p-4 rounded-lg">
-                    <span class="font-bold text-slate-400 text-sm sm:text-base">Google</span>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 opacity-70 items-center">
+                <div class="flex items-center justify-center p-3 sm:p-4">
+                    <span class="font-bold text-slate-400 text-xs sm:text-sm md:text-base text-center">Google</span>
                 </div>
-                <div class="flex items-center justify-center p-4 rounded-lg">
-                    <span class="font-bold text-slate-400 text-sm sm:text-base">Amazon</span>
+                <div class="flex items-center justify-center p-3 sm:p-4">
+                    <span class="font-bold text-slate-400 text-xs sm:text-sm md:text-base text-center">Amazon</span>
                 </div>
-                <div class="flex items-center justify-center p-4 rounded-lg">
-                    <span class="font-bold text-slate-400 text-sm sm:text-base">Spotify</span>
+                <div class="flex items-center justify-center p-3 sm:p-4">
+                    <span class="font-bold text-slate-400 text-xs sm:text-sm md:text-base text-center">Spotify</span>
                 </div>
-                <div class="flex items-center justify-center p-4 rounded-lg">
-                    <span class="font-bold text-slate-400 text-sm sm:text-base">Schneider Electric</span>
+                <div class="flex items-center justify-center p-3 sm:p-4">
+                    <span class="font-bold text-slate-400 text-xs sm:text-sm md:text-base text-center">Schneider Electric</span>
                 </div>
-                <div class="flex items-center justify-center p-4 rounded-lg">
-                    <span class="font-bold text-slate-400 text-sm sm:text-base">Trivago</span>
+                <div class="flex items-center justify-center p-3 sm:p-4">
+                    <span class="font-bold text-slate-400 text-xs sm:text-sm md:text-base text-center">Trivago</span>
                 </div>
-                <div class="flex items-center justify-center p-4 rounded-lg">
-                    <span class="font-bold text-slate-400 text-sm sm:text-base">NYU</span>
+                <div class="flex items-center justify-center p-3 sm:p-4">
+                    <span class="font-bold text-slate-400 text-xs sm:text-sm md:text-base text-center">NYU</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Problem / Solution Section -->
-    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-950">
+    <section class="py-16 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 md:mb-14 text-center leading-tight">
                 Why Standard AI Isn't Enough for Your Business
             </h2>
 
-            <div class="space-y-6 md:space-y-8 text-base sm:text-lg text-slate-300 leading-relaxed mb-12">
+            <div class="space-y-6 md:space-y-7 text-base sm:text-lg text-slate-300 leading-relaxed mb-14 md:mb-16">
                 <p>
                     Most AI tools (like standard ChatGPT) are generalists. They write decent emails but fail at strategic, data-backed content that actually ranks on Google.
                 </p>
@@ -167,7 +185,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 auto-rows-max">
                 <div class="p-6 md:p-8 rounded-xl bg-slate-900/50 border border-slate-800 hover:border-blue-500/30 transition-all duration-300">
                     <div class="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center mb-5">
                         <i data-lucide="search" class="text-blue-400 h-6 w-6"></i>
@@ -202,19 +220,19 @@
     </section>
 
     <!-- Feature Breakdown -->
-    <section id="features" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <section id="features" class="py-16 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center leading-tight">
                 The "Speed Writer" Advantage
             </h2>
 
             <!-- Feature 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-24 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 mb-16 md:mb-24 items-start md:items-center">
                 <div class="order-2 md:order-1 w-full">
                     <img src="./public/images/blog-writing-laptop.jpg" alt="AI Article Writer" class="rounded-xl w-full h-auto object-cover shadow-lg" loading="lazy">
                 </div>
-                <div class="order-1 md:order-2 space-y-5">
-                    <h3 class="text-3xl md:text-4xl font-bold">1. AI Article Writer 6.0 (The Workhorse)</h3>
+                <div class="order-1 md:order-2 space-y-5 md:space-y-6">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">1. AI Article Writer 6.0<br class="hidden sm:block">(The Workhorse)</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed">
                         Don't just write articles; engineer them. Generate 1,500+ word blog posts that are fully optimized for SEO, formatted with proper H2/H3 tags, and fact-checked in under 60 seconds.
                     </p>
@@ -225,24 +243,24 @@
             </div>
 
             <!-- Feature 2 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mb-16 md:mb-24 items-center">
-                <div class="order-2 md:order-1 space-y-5">
-                    <h3 class="text-3xl md:text-4xl font-bold">2. Chatsonic: The "Always-On" Marketing Agent</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 mb-16 md:mb-24 items-start md:items-center">
+                <div class="order-2 md:order-1 space-y-5 md:space-y-6">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">2. Chatsonic:<br class="hidden sm:block">The "Always-On" Agent</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed">
                         Unlike basic chatbots, Chatsonic has a direct line to Google Search. It knows today's news, today's stock prices, and today's trends. It's like having a research assistant who never sleeps.
                     </p>
-                    <ul class="space-y-3 pt-2">
-                        <li class="flex items-start gap-3 text-slate-400">
+                    <ul class="space-y-3 pt-3 md:pt-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm md:text-base">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-base">Real-time data integration</span>
+                            <span>Real-time data integration</span>
                         </li>
-                        <li class="flex items-start gap-3 text-slate-400">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm md:text-base">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-base">Always up-to-date insights</span>
+                            <span>Always up-to-date insights</span>
                         </li>
-                        <li class="flex items-start gap-3 text-slate-400">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm md:text-base">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-base">24/7 availability</span>
+                            <span>24/7 availability</span>
                         </li>
                     </ul>
                 </div>
@@ -252,27 +270,27 @@
             </div>
 
             <!-- Feature 3 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start md:items-center">
                 <div class="order-2 md:order-1 w-full">
                     <img src="./public/images/seo-analytics-visual.jpg" alt="SEO & GEO Optimization" class="rounded-xl w-full h-auto object-cover shadow-lg" loading="lazy">
                 </div>
-                <div class="order-1 md:order-2 space-y-5">
-                    <h3 class="text-3xl md:text-4xl font-bold">3. SEO & GEO (Generative Engine Optimization)</h3>
+                <div class="order-1 md:order-2 space-y-5 md:space-y-6">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">3. SEO & GEO<br class="hidden sm:block">(Generative Optimization)</h3>
                     <p class="text-slate-300 text-base md:text-lg leading-relaxed">
                         New for 2025: Don't just rank on Google. Optimize your brand to show up in AI answers on ChatGPT, Perplexity, and Gemini. Control how AI talks about your business.
                     </p>
-                    <ul class="space-y-3 pt-2">
-                        <li class="flex items-start gap-3 text-slate-400">
+                    <ul class="space-y-3 pt-3 md:pt-4">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm md:text-base">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-base">Multi-engine visibility</span>
+                            <span>Multi-engine visibility</span>
                         </li>
-                        <li class="flex items-start gap-3 text-slate-400">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm md:text-base">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-base">AI mention tracking</span>
+                            <span>AI mention tracking</span>
                         </li>
-                        <li class="flex items-start gap-3 text-slate-400">
+                        <li class="flex items-start gap-3 text-slate-300 text-sm md:text-base">
                             <i data-lucide="check-circle" class="text-green-400 h-5 w-5 flex-shrink-0 mt-0.5"></i>
-                            <span class="text-base">Brand control across AI platforms</span>
+                            <span>Brand control across AI platforms</span>
                         </li>
                     </ul>
                 </div>
@@ -281,9 +299,9 @@
     </section>
 
     <!-- Comparison Table -->
-    <section id="comparison" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-950">
+    <section id="comparison" class="py-16 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-8 text-center leading-tight">
                 Stop Using Outdated Tools
             </h2>
             <p class="text-center text-slate-400 text-base md:text-lg mb-12 md:mb-16">
@@ -344,21 +362,21 @@
     </section>
 
     <!-- Houston Local Section -->
-    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <section class="py-16 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 md:mb-14 text-center leading-tight">
                 Built for the Hustle of the Third Coast
             </h2>
 
-            <p class="text-lg md:text-xl text-slate-300 text-center mb-8 leading-relaxed">
+            <p class="text-base sm:text-lg md:text-xl text-slate-300 text-center mb-6 md:mb-8 leading-relaxed">
                 Houston is a city of builders, innovators, and pragmatists. We don't have time for fluff.
             </p>
 
-            <p class="text-base md:text-lg text-slate-300 text-center mb-12 leading-relaxed">
+            <p class="text-base md:text-lg text-slate-300 text-center mb-14 md:mb-16 leading-relaxed">
                 Whether you are efficiently managing communications for a tech startup in Midtown or driving lead gen for a service business in The Woodlands, Writesonic matches your tempo.
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 auto-rows-max">
                 <div class="p-6 md:p-8 rounded-xl bg-slate-950 border border-slate-800 text-center">
                     <div class="text-3xl md:text-4xl font-bold text-purple-400 mb-2">80%</div>
                     <p class="text-slate-300 text-sm md:text-base">Cut writing time</p>
@@ -376,13 +394,13 @@
     </section>
 
     <!-- Reviews Section -->
-    <section class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-950">
+    <section class="py-16 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-950">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 md:mb-16 text-center leading-tight">
                 Real Reviews (Verified G2 & Capterra 2025)
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 auto-rows-max">
                 <!-- Review 1 -->
                 <div class="p-6 md:p-8 rounded-lg bg-slate-900/50 border border-slate-800 hover:border-blue-500/30 transition-all duration-300">
                     <div class="flex items-center gap-2 mb-4">
@@ -426,16 +444,16 @@
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="py-20 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <section id="pricing" class="py-16 md:py-28 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-8 text-center leading-tight">
                 Simple & Transparent Pricing
             </h2>
             <p class="text-center text-slate-400 text-base md:text-lg mb-12 md:mb-16">
                 Pick the plan that fits your growth stage.
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 auto-rows-max">
                 <!-- Free Trial -->
                 <div class="p-6 md:p-8 rounded-lg bg-slate-900/50 border border-slate-800 hover:border-slate-700 transition-all duration-300">
                     <h3 class="text-xl md:text-2xl font-bold mb-2">Free Trial</h3>
@@ -476,18 +494,18 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-slate-900 border-t border-slate-800">
+    <footer class="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-slate-900 border-t border-slate-800">
         <div class="max-w-7xl mx-auto">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8 pb-8 border-b border-slate-800">
                 <div class="flex items-center gap-2">
                     <div class="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                         <i data-lucide="zap" class="w-5 h-5 text-white"></i>
                     </div>
-                    <span class="font-bold text-white text-lg">
+                    <span class="font-bold text-white text-base md:text-lg">
                         The AI Speed Writer
                     </span>
                 </div>
-                <div class="flex gap-6 text-sm text-slate-400">
+                <div class="flex flex-wrap justify-center sm:justify-end gap-4 md:gap-6 text-xs sm:text-sm text-slate-400">
                     <a href="#" class="hover:text-white transition">Privacy Policy</a>
                     <a href="#" class="hover:text-white transition">Terms of Service</a>
                     <a href="#" class="hover:text-white transition">Affiliate Disclosure</a>
@@ -495,10 +513,10 @@
             </div>
 
             <div class="text-center space-y-4">
-                <p class="text-slate-400 text-sm">
+                <p class="text-slate-400 text-xs md:text-sm">
                     © 2025 The AI Speed Writer. Independent Writesonic Partner.
                 </p>
-                <p class="text-slate-500 text-xs leading-relaxed">
+                <p class="text-slate-500 text-xs leading-relaxed max-w-3xl mx-auto">
                     <strong>Disclaimer:</strong> We are an independent affiliate for Writesonic. We may receive commissions from purchases made through links on this page, at no extra cost to you. We only recommend tools we actually use to scale businesses.
                 </p>
             </div>
